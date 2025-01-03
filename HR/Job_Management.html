@@ -1,0 +1,292 @@
+<!DOCTYPE html lang="ar">
+<html dir="rtl" lang="ar">
+
+<head>
+    <title>صقر القاهرة-إداره الوظائف </title>
+    <meta charset="UTF-8">
+    <meta name="description"
+        content="شركة صقر هي شركة رائدة في مجال العقارات والمقاولات والتشطيبات الداخلية والخارجية والأمن والحراسة">
+    <meta name="keywords" content="عقارات , مقاولات , أمن والحراسة , تشطيبات , النظافة , تأمين , صقر , القاهرة">
+    <meta name="author" content="Saqr Elqahera">
+    <link rel="icon" type="image/png" href="../images/saqr_logo-removebg-preview.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/Job_Management.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <!-- ? Preloader Start -->
+    <div id="preloader-active">
+        <div class="preloader d-flex align-items-center justify-content-center">
+            <div class="preloader-inner position-relative">
+                <div class="preloader-circle"></div>
+                <div class="preloader-img pere-text">
+                    <img src="../images/صقر-removebg-preview.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Preloader Start -->
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary ">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../HR/Staff_Management.html"">
+                <img src=" ../images/صقر-removebg-preview.png" alt="" width="40" height="32"
+                class="d-inline-block align-text-top">
+                <span style="margin-right: 5px;padding-top: 2px;">
+                    شركة صقر
+                </span>
+
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <!-- <form class="d-flex form-search ">
+                    <button class="btn search" type="submit">بحث</button>
+                    <input class="form-control me-2 sea" type="search" placeholder="بحث" aria-label="Search">
+                </form> -->
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 navy">
+                    <li class="nav-item ">
+                        <a style="color: white;" class="nav-link ml-1 link text-light"
+                            href="../HR/Staff_Management.html">الصفحة
+                            الرئيسية</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a style="color: white;" class="nav-link dropdown-toggle  ml-1  link" href="#"
+                            id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+
+                            الوظائف
+                        </a>
+                        <div class="dropdown-menu " aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="jobs.html">مهندس</a>
+                            <a class="dropdown-item" href="jobs.html">محاسب</a>
+                            <a class="dropdown-item" href="jobs.html">مشرف أمن</a>
+                            <a class="dropdown-item" href="jobs.html">مدير حسابات</a>
+
+                        </div>
+                    </li>
+
+                </ul>
+                <ul class="navbar-nav">
+                    <a href="../HR/personal_hr.html" class="text-white me-4 p-1" id="profileIcon"
+                        data-bs-toggle="popover" title="الصفحة الشخصية ">
+                        <img class="pers" src="../images/sabry.jpeg" alt="">
+                    </a>
+                </ul>
+
+
+            </div>
+        </div>
+    </nav>
+    <!-- End of navbar -->
+    <!-- tabs -->
+
+    <div class="container-fluid">
+
+        <!-- التابات -->
+
+        <div class="row">
+            <div class="col-12">
+                <ul class="nav nav-tabs tabbb" id="myTab" role="tablist">
+                    <li class="nav-item">
+                        <h3 class="h3" style="margin-top: 10px; padding-right: 20px; ">HR</h3>
+                    </li>
+                    <!-- Navigation Tabs -->
+                    <li class="nav-item">
+                        <a class="nav-link " id="tab1-tab" data-toggle="tab" href="#tab1" role="tab"
+                            aria-controls="tab1" aria-selected="true" onclick="redirectTostaffmanagement()">إدارة
+                            الموظفين</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="tab2-tab" data-toggle="tab" href="#tab2" role="tab" aria-controls="tab2"
+                            aria-selected="false" onclick="redirectTonationality()">إدارة الجنسيات</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link  active " id="tab3-tab" data-toggle="tab" href="#tab3" role="tab"
+                            aria-controls="tab3" aria-selected="false" onclick="redirectTojob()">إدارة الوظائف</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="tab4-tab" data-toggle="tab" href="#tab4" role="tab" aria-controls="tab4"
+                            aria-selected="false" onclick="redirectToplace()">إدارة اماكن التواجد</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="tab5-tab" data-toggle="tab" href="#tab5" role="tab" aria-controls="tab5"
+                            aria-selected="false" onclick="redirectToreviewcomplaints()">مراجعة الشكاوي</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="tab6-tab" data-toggle="tab" href="#tab6" role="tab" aria-controls="tab6"
+                            aria-selected="false" onclick="redirectToadvances()">السلف</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="tab7-tab" data-toggle="tab" href="#tab7" role="tab" aria-controls="tab7"
+                            aria-selected="false" onclick="redirectToanalysis()">التحليل</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="tab8-tab" data-toggle="tab" href="#tab8" role="tab" aria-controls="tab8"
+                            aria-selected="false" onclick="redirectTodepartment()">إدارة الأقسام</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+    <div class="tab-content big_tab" id="myTabContent">
+        <div class="tab-pane fade show active" id="tab1" role="tabpanel" aria-labelledby="tab1-tab">
+            <div class="cont m-2">
+                <h2 class="h2title text-center mb-4">إدارة الوظائف <img src="../images/job-offer_15332398.gif"
+                        alt="Icon"></h2>
+
+                <div class="colum">
+                    <div class="text-center col-md-12">
+                        <img src="../images/hr_text1.jpg" class="img-fluid" style="width: 100%; max-width: 700px;"
+                            alt="صورة فقط للعرض">
+                    </div>
+
+                    <div class="col-md-12">
+                        <div class="row g-2 justify-content-center p-2 job-form mb-1">
+                            <div class="col-md-8 col-sm-12">
+                                <label for="jobInput" class="form-label">اسم الوظيفة:</label>
+                                <input name="job_name" type="text" id="jobInput" class="form-control w-100"
+                                    placeholder="أدخل اسم الوظيفة">
+                            </div>
+
+                            <div class="col-md-4 text-center align-self-end m-2 col-sm-12">
+                                <button id="addJobBtn" class="btn btn-primary w-100"
+                                    onclick="jobToEditIndex !== null ? updateJob() : addJob()">
+                                    <span id="addJobBtnText">إضافة وظيفة</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <table class="table table-bordered table-striped text-center" id="jobTable">
+                            <thead class="table-primary">
+                                <tr>
+                                    <th>رقم المسلسل</th>
+                                    <th>اسم الوظيفة</th>
+                                    <th>إجراءات</th>
+                                </tr>
+                            </thead>
+                            <tbody id="jobBody">
+                                <tr>
+                                    <td id="job-1">1</td>
+                                    <td id="job-name-1">مهندس</td>
+                                    <td>
+                                        <button class="btn btn-danger  button " onclick="deleteJob(1)">حذف</button>
+                                        <button class="btn btn-success button" onclick="editJob(1)">تعديل</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td id="job-2">2</td>
+                                    <td id="job-name-2">محاسب</td>
+                                    <td>
+                                        <button class="btn btn-danger button " onclick="deleteJob(2)">حذف</button>
+                                        <button class="btn btn-success  button " onclick="editJob(2)">تعديل</button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- button to move up -->
+    <button title="top page" id="btn"><i class="fa-solid fa-arrow-up"></i></button>
+
+
+    <!-- footer -->
+    <footer class="text-center bg-body-tertiary">
+
+        <div style="width: 80%;height: 1px;background-color: rgb(177, 179, 179);margin: auto;margin-bottom: 80px;">
+
+        </div>
+        <div class=" end">
+            <img style="height: 40px;width: 50px;padding-left: 10px;" src="../images/saqr_logo-removebg-preview.png"
+                alt="">
+            <h4>شركة صقر القاهرة</h4>
+
+        </div>
+
+        <!-- Grid container -->
+        <div class="container pt-4">
+            <section class="mb-4">
+                <!-- الصفحة الرئيسية -->
+                <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1 footer_link fo_link"
+                    href="../HR/Staff_Management.html" role="button" data-mdb-ripple-color="dark">الصفحة
+                    الرئيسية</i></a>
+
+                <!-- عن الشركة -->
+                <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1 footer_link fo_link"
+                    href="../about_us.html" role="button" data-mdb-ripple-color="dark">عن الشركة</a>
+
+                <!-- تواصل معنا -->
+                <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1 footer_link fo_link"
+                    href="../contact.html" role="button" data-mdb-ripple-color="dark">تواصل معنا</a>
+
+
+            </section>
+            <!-- Section: Social media -->
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+            جميع الحقوق محفوظة لشركة صقر القاهرة 2024 © </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- footer -->
+
+
+
+
+
+
+    </script>
+    <!-- jQuery CDN -->
+    <script src="../js/jquery-3.7.1.min.js"></script>
+
+    <!-- Popper.js for Bootstrap (if using Bootstrap 5) -->
+    <script src="../js/popper.min.js"></script>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/Job_Management.js"></script>
+   
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

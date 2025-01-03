@@ -1,0 +1,344 @@
+<!DOCTYPE html lang="ar">
+<html dir="rtl" lang="ar">
+
+<head>
+    <title>صقر القاهرة- السلف </title>
+    <meta charset="UTF-8">
+    <meta name="description"
+        content="شركة صقر هي شركة رائدة في مجال العقارات والمقاولات والتشطيبات الداخلية والخارجية والأمن والحراسة">
+    <meta name="keywords" content="عقارات , مقاولات , أمن والحراسة , تشطيبات , النظافة , تأمين , صقر , القاهرة">
+    <meta name="author" content="Saqr Elqahera">
+    <link rel="icon" type="image/png" href="../images/saqr_logo-removebg-preview.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/advances.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <!-- ? Preloader Start -->
+    <div id="preloader-active">
+        <div class="preloader d-flex align-items-center justify-content-center">
+            <div class="preloader-inner position-relative">
+                <div class="preloader-circle"></div>
+                <div class="preloader-img pere-text">
+                    <img src="../images/صقر-removebg-preview.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Preloader Start -->
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary ">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../HR/Staff_Management.html">
+                <img src="../images/صقر-removebg-preview.png" alt="" width="40" height="32"
+                    class="d-inline-block align-text-top">
+                <span style="margin-right: 5px;padding-top: 2px;">
+                    شركة صقر
+                </span>
+
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <form class="d-flex form-search ">
+                    <button class="btn  search" type="submit">بحث</button>
+                    <input class="form-control me-2 sea" type="search" placeholder="بحث" aria-label="Search">
+                </form>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 navy">
+                    <li class="nav-item ">
+                        <a style="color: white;" class="nav-link ml-1 link text-light"
+                            href="../HR/Staff_Management.html">الصفحة
+                            الرئيسية</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a style="color: white;" class="nav-link dropdown-toggle  ml-1  link" href="#"
+                            id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+
+                            الوظائف
+                        </a>
+                        <div class="dropdown-menu " aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="jobs.html">مهندس</a>
+                            <a class="dropdown-item" href="jobs.html">محاسب</a>
+                            <a class="dropdown-item" href="jobs.html">مشرف أمن</a>
+                            <a class="dropdown-item" href="jobs.html">مدير حسابات</a>
+
+                        </div>
+                    </li>
+
+                </ul>
+                <ul class="navbar-nav">
+                    <a href="../HR/personal_hr.html" class="text-white me-4 p-1" id="profileIcon"
+                        data-bs-toggle="popover" title="الصفحة الشخصية ">
+                        <img class="pers" src="../images/sabry.jpeg" alt="">
+                    </a>
+                </ul>
+
+
+            </div>
+        </div>
+    </nav>
+    <!-- End of navbar -->
+    <!-- tabs -->
+
+    <div class="container-fluid">
+
+        <!-- التابات -->
+
+        <div class="row">
+            <div class="col-12">
+                <ul class="nav nav-tabs tabbb" id="myTab" role="tablist">
+                    <li class="nav-item">
+                        <h3 class="h3" style="margin-top: 10px; padding-right: 20px; ">HR</h3>
+                    </li>
+                    <!-- Navigation Tabs -->
+                    <li class="nav-item">
+                        <a class="nav-link " id="tab1-tab" data-toggle="tab" href="#tab1" role="tab"
+                            aria-controls="tab1" aria-selected="true" onclick="redirectTostaffmanagement()">إدارة
+                            الموظفين</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="tab2-tab" data-toggle="tab" href="#tab2" role="tab" aria-controls="tab2"
+                            aria-selected="false" onclick="redirectTonationality()">إدارة الجنسيات</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="tab3-tab" data-toggle="tab" href="#tab3" role="tab" aria-controls="tab3"
+                            aria-selected="false" onclick="redirectTojob()">إدارة الوظائف</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="tab4-tab" data-toggle="tab" href="#tab4" role="tab" aria-controls="tab4"
+                            aria-selected="false" onclick="redirectToplace()">إدارة اماكن التواجد</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " id="tab5-tab" data-toggle="tab" href="#tab5" role="tab"
+                            aria-controls="tab5" aria-selected="false" onclick="redirectToreviewcomplaints()">مراجعة
+                            الشكاوي</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active " id="tab6-tab" data-toggle="tab" href="#tab6" role="tab"
+                            aria-controls="tab6" aria-selected="false" onclick="redirectToadvances()">السلف</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="tab7-tab" data-toggle="tab" href="#tab7" role="tab" aria-controls="tab7"
+                            aria-selected="false" onclick="redirectToanalysis()">التحليل</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="tab8-tab" data-toggle="tab" href="#tab8" role="tab" aria-controls="tab8"
+                            aria-selected="false" onclick="redirectTodepartment()">إدارة الأقسام</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+    <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="tab1" role="tabpanel" aria-labelledby="tab1-tab">
+            <!-- محتوى التبويب 1 -->
+            <h2 class="h2title"> السلف
+                <img src="../images/cash_12147233.gif" alt=" Icon">
+            </h2>
+            <div class="column"> </div>
+            <div class="container">
+                <div style="margin-bottom: 150px;margin-top: 70px;" class="  row  d-flex justify-content-between ">
+                    <div class="col-lg-4 col-md-6 col-sm-12 mt-3">
+                        <div class="card   shadow-sm">
+                            <div style="margin: auto;margin-top: 5px;">
+                                <img class="rounded-5"
+                                    style="border-radius: 40px; border: 2px solid rgb(105, 101, 101);" width="80px"
+                                    height="80px" src="../images/sabry.jpeg" alt="">
+                            </div>
+                            <div class="card-body rounded-3">
+                                <h5 class="card-title text-center">محمد صبرى</h5>
+                                <h6 class="card-title text-center">مهندس</h6>
+                                <form class="needs-validation" action="" method="post" id="loanForm" novalidate>
+                                    <div class="mb-3">
+                                        <label for="inp1" class="form-label lab_money">قيمة السلفة</label>
+                                        <input readonly type="number" min="200" class="form-control" id="inp1"
+                                            placeholder="1000" name="solfa_value">
+
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="inp2" class="form-label lab_money">سبب السلفة</label>
+                                        <textarea readonly minlength="10" class="form-control" id="inp2" rows="3"
+                                            placeholder="أسباب مرضية" name="solfa_reason"></textarea>
+
+                                    </div>
+                                    <div class="col-12 d-flex justify-content-center">
+                                        <button class="btn btn-warning w-75" type="button" data-bs-toggle="modal"
+                                            data-bs-target="#staticBackdrop" id="submitButton">قيد المراجعة</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-12 mt-3">
+                        <div class="card    shadow-sm">
+                            <div style="margin: auto;margin-top: 5px;">
+                                <img class="rounded-5"
+                                    style="border-radius: 40px; border: 2px solid rgb(105, 101, 101);" width="80px"
+                                    height="80px" src="../images/sabry.jpeg" alt="">
+                            </div>
+                            <div class="card-body rounded-3">
+                                <h5 class="card-title text-center">محمد صبرى</h5>
+                                <h6 class="card-title text-center">مهندس</h6>
+                                <form class="needs-validation" action="" method="post" id="loanForm" novalidate>
+                                    <div class="mb-3">
+                                        <label for="inp1" class="form-label lab_money">قيمة السلفة</label>
+                                        <input readonly type="number" min="200" class="form-control" id="inp1"
+                                            placeholder="1000" name="solfa_value1">
+
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="inp2" class="form-label lab_money">سبب السلفة</label>
+                                        <textarea readonly minlength="10" class="form-control" id="inp2" rows="3"
+                                            placeholder="أسباب مرضية" name="solfa_reason1"></textarea>
+
+                                    </div>
+                                    <div class="col-12 d-flex justify-content-center">
+                                        <button class="btn btn-primary w-75" type="button" data-bs-toggle="modal"
+                                            data-bs-target="#staticBackdrop" id="submitButton">تمت الموافقة</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 mt-3">
+                        <div class="card   shadow-sm">
+                            <div style="margin: auto;margin-top: 5px;">
+                                <img class="rounded-5"
+                                    style="border-radius: 40px; border: 2px solid rgb(105, 101, 101);" width="80px"
+                                    height="80px" src="../images/sabry.jpeg" alt="">
+                            </div>
+                            <div class="card-body rounded-3">
+                                <h5 class="card-title text-center">محمد صبرى</h5>
+                                <h6 class="card-title text-center">مهندس</h6>
+                                <form class="needs-validation" action="" method="post" id="loanForm" novalidate>
+                                    <div class="mb-3">
+                                        <label for="inp1" class="form-label lab_money">قيمة السلفة</label>
+                                        <input readonly type="number" min="200" class="form-control" id="inp1"
+                                            placeholder="1000" name="solfa_value2">
+
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="inp2" class="form-label lab_money">سبب السلفة</label>
+                                        <textarea readonly minlength="10" class="form-control" id="inp2" rows="3"
+                                            placeholder="أسباب مرضية" name="solfa_reason2"></textarea>
+
+                                    </div>
+                                    <div class="col-12 d-flex justify-content-center">
+                                        <button class="btn btn-warning w-75" type="button" data-bs-toggle="modal"
+                                            data-bs-target="#staticBackdrop" id="submitButton">قيد المراجعة</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+        <!-- button to move up -->
+        <button title="top page" id="btn"><i class="fa-solid fa-arrow-up"></i></button>
+
+
+        <!-- footer -->
+        <footer class="text-center bg-body-tertiary">
+
+            <div style="width: 80%;height: 1px;background-color: rgb(177, 179, 179);margin: auto;margin-bottom: 80px;">
+
+            </div>
+            <div class=" end">
+                <img style="height: 40px;width: 50px;padding-left: 10px;" src="../images/saqr_logo-removebg-preview.png"
+                    alt="">
+                <h4>شركة صقر القاهرة</h4>
+
+            </div>
+
+            <!-- Grid container -->
+            <div class="container pt-4">
+                <section class="mb-4">
+                    <!-- الصفحة الرئيسية -->
+                    <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1 footer_link fo_link"
+                        href="../HR/Staff_Management.html" role="button" data-mdb-ripple-color="dark">الصفحة
+                        الرئيسية</i></a>
+
+                    <!-- عن الشركة -->
+                    <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1 footer_link fo_link"
+                        href="../about_us.html" role="button" data-mdb-ripple-color="dark">عن الشركة</a>
+
+                    <!-- تواصل معنا -->
+                    <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1 footer_link fo_link"
+                        href="../contact.html" role="button" data-mdb-ripple-color="dark">تواصل معنا</a>
+
+
+                </section>
+                <!-- Section: Social media -->
+            </div>
+            <!-- Grid container -->
+
+            <!-- Copyright -->
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+                جميع الحقوق محفوظة لشركة صقر القاهرة 2024 © </div>
+            <!-- Copyright -->
+        </footer>
+        <!-- footer -->
+
+
+
+
+        </script>
+        <!-- jQuery CDN -->
+        <script src="../js/jquery-3.7.1.min.js"></script>
+
+        <!-- Popper.js for Bootstrap (if using Bootstrap 5) -->
+        <script src="../js/popper.min.js"></script>
+
+        <!-- Bootstrap 5 JS -->
+        <script src="../js/bootstrap.bundle.min.js"></script>
+        <script src="../js/advances.js"></script>
+
+
+
+   
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
