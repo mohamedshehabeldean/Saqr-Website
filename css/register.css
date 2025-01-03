@@ -1,0 +1,917 @@
+body {
+    background-color: #182c5d1d;
+    margin: 0;
+    box-sizing: border-box;
+    direction: rtl;
+    margin: 0;
+    padding: 10px;
+    padding-top: 60px;
+    box-sizing: border-box;
+    width: 100%;
+    direction: rtl;
+    height: 100%;
+}
+
+.register-container {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+
+
+}
+
+h1 {
+    text-align: center;
+    color: #0031A0;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    text-align: center;
+    width: 110px;
+}
+
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* إعدادات حاوية الحقول الشخصية */
+.personal-info-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    /* المسافة بين الحقول */
+}
+
+/* تنسيق كل مجموعة حقل - 3 حقول في الصف */
+.personal-info-group {
+    flex: 0 1 calc(33.333% - 20px);
+    /* عرض كل حقل ليأخذ ثلث العرض مع الأخذ في الاعتبار المسافة */
+    box-sizing: border-box;
+}
+
+/* استعلام الوسائط للشاشات المتوسطة - 2 حقول في الصف */
+@media (max-width: 992px) {
+    .personal-info-group {
+        flex: 0 1 calc(50% - 20px);
+        /* عرض كل حقل ليأخذ نصف العرض في الشاشات المتوسطة */
+    }
+}
+
+/* استعلام الوسائط للشاشات الصغيرة - حقل واحد في الصف */
+@media (max-width: 576px) {
+    .personal-info-group {
+        flex: 0 1 100%;
+        /* عرض كامل العرض للحقل الواحد */
+    }
+}
+
+.invalid-feedback {
+    display: none;
+}
+
+.is-invalid~.invalid-feedback {
+    display: block;
+}
+
+.conditional-input {
+    margin-top: 10px;
+}
+
+
+/* تجاوز إعدادات form-control */
+input.form-control,
+select.form-control {
+    width: 90%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-bottom: 2px;
+    border-bottom-width: 2px;
+}
+
+/* تنسيق التركيز */
+input.form-control:focus,
+select.form-control:focus {
+    border-color: #0031A0;
+    /* اللون الأزرق */
+    outline: none;
+    /* إزالة الخط الخارجي الافتراضي */
+    box-shadow: none;
+}
+
+
+
+/* تنسيق الرسائل غير الصالحة */
+.error-message {
+    color: red;
+    font-size: 0.875em;
+    margin-top: 5px;
+}
+
+
+input[type="submit"] {
+    background-color: #0031A0;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+
+.card-header {
+    padding: 1rem 1.35rem;
+    font-weight: bolder;
+    border-right: #0031A0 5px solid;
+    border-radius: 20px;
+    color: #0031A0;
+    margin-bottom: 0;
+    background-color: #0030a00b;
+    border-bottom: 1px solid rgba(33, 40, 50, 0.125);
+}
+
+
+.card .card-header {
+    font-weight: bolder;
+}
+
+.card-header:first-child {
+    border-radius: 0.35rem 0.35rem 0 0;
+}
+
+
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="url"] {
+    padding: 10px;
+}
+
+button[type="submit"] {
+    background-color: #0031A0;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+
+#nextBtn {
+    background-color: #0031A0;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+
+button[type="submit"]:hover {
+    background-color: #022578;
+}
+
+#nextBtn:hover {
+    background-color: #022578;
+}
+
+@media (max-width: 768px) {
+    .personal-info-grid {
+        grid-template-columns: 1fr;
+        /* عمود واحد في الشاشات الصغيرة */
+    }
+}
+
+/* button to move up */
+#btn {
+    width: 50px;
+    height: 50px;
+    border: none;
+    background-color: yellow;
+    cursor: pointer;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    display: none;
+    border-radius: 50px;
+}
+
+#btn:hover {
+    background-color: rgb(199, 205, 111);
+    border: 2px solid black;
+}
+
+/* ***************************** */
+/************* footer ************/
+/* ***************************** */
+.footer_link {
+    text-decoration: none;
+}
+
+.fo_link:hover {
+    text-decoration: underline;
+}
+
+.end {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: end;
+}
+
+/* Ensure "Next" button is displayed properly */
+#nextBtn {
+    display: inline-block;
+    margin-top: 20px;
+}
+
+/* Ensure "Create Account" button is displayed properly on the last tab */
+input[type="submit"] {
+    display: none;
+    /* Hidden by default, shown only on the last tab */
+    margin-top: 20px;
+}
+
+/* الأساليب الأساسية لجميع أقسام الأطفال */
+.child-info {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+/* الأساليب الأساسية لجميع الحقول داخل أقسام الأطفال */
+.child-field {
+    flex: 1;
+    margin-bottom: 10px;
+}
+
+/* الأساليب الأساسية للحقول داخل أقسام الأطفال */
+.child-info .child-field {
+    flex: 1 1 calc(33.333% - 20px);
+    /* يعرض 3 حقول في الصف مع مسافة الفجوة */
+}
+
+/* الأساليب للعنصر داخل الحقل */
+.child-info .child-field label,
+.child-info .child-field input {
+    display: block;
+    margin-right: 10px;
+}
+
+/* الأساليب للزر داخل أقسام الأطفال */
+.child-info button {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    background-color: #f8d7da;
+    border: none;
+    color: #721c24;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+/* الأساليب للأجهزة الصغيرة */
+@media (max-width: 768px) {
+    .child-info .child-field {
+        flex: 1 1 100%;
+        /* يجعل كل حقل يظهر في صف منفصل */
+        margin-bottom: 10px;
+    }
+
+    .child-info {
+        display: block;
+        /* يعرض كل الحقول في عمود واحد */
+    }
+
+    .child-info button {
+        position: static;
+        margin-top: 10px;
+        /* يضيف مساحة أعلى الزر */
+        right: auto;
+        top: auto;
+    }
+}
+
+#add-child-btn,
+#add-relative-btn,
+#add-sibling-btn,
+#add-accused-relative-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+#add-child-btn:hover,
+#add-relative-btn:hover,
+#add-sibling-btn:hover,
+#add-accused-relative-button:hover {
+    background-color: #0056b3;
+}
+
+#remove-child-btn {
+    background-color: #f8d7da;
+    border: none;
+    color: #721c24;
+    padding: 5px 10px;
+    float: inline-start;
+    cursor: pointer;
+}
+
+#remove-child-btn:hover {
+    background-color: #f5c6cb;
+}
+
+
+.parent-info {
+    margin-bottom: 20px;
+    margin-top: 10px;
+    background-color: rgba(33, 40, 50, 0.03);
+    border-radius: 10px;
+}
+
+.parent-fields {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.field-group {
+    flex: 1 1 calc(33.333% - 10px);
+    /* ثلاث حقول في الصف الواحد */
+    display: flex;
+    flex-direction: column;
+}
+
+.field-group label {
+    margin-bottom: 5px;
+}
+
+.field-group input {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 90%;
+    border-bottom-width: 2px;
+}
+
+/* تنسيق التركيز */
+.field-group input:focus,
+.field-group select:focus {
+    border-color: #0031A0;
+    /* اللون الأزرق */
+    outline: none;
+    /* إزالة الخط الخارجي الافتراضي */
+}
+
+/* استعلام الوسائط للشاشات الصغيرة */
+@media (max-width: 768px) {
+    .field-group {
+        flex: 1 1 calc(50% - 10px);
+        /* حقلين في الصف الواحد */
+    }
+}
+
+
+
+#relatives-abroad-info,
+#children-info,
+#relatives-info,
+#accused-relatives,
+#spouse-info,
+#personal-info,
+#grandparent-info,
+#parents-info,
+#travel_details {
+    border: 2px solid #ddd;
+    /* بولدر خارجي */
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%;
+}
+
+
+/* الأساليب للأجهزة الصغيرة */
+@media (max-width: 768px) {
+    .relative-info div {
+        display: block;
+        /* يعرض كل حقل في صف منفصل */
+    }
+
+    .relative-field {
+        flex: 1 1 100%;
+        /* يعرض كل حقل في صف منفصل */
+    }
+
+    .relative-field label,
+    .relative-field input {
+        margin-right: 0;
+        /* إزالة المسافة على اليمين */
+    }
+}
+
+
+
+
+
+/* الأساليب الأساسية لجميع الأقارب */
+.relative-info {
+    border: 1px solid #ccc;
+    /* بولدر لكل قسم قريب */
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+/* الأساليب الأساسية لجميع الحقول */
+.relative-field {
+    margin-bottom: 10px;
+    flex: 1 1 calc(33.333% - 20px);
+    /* 3 fields per row with margin gap */
+
+}
+
+.relative-field label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.relative-field input {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+    border-bottom-width: 2px;
+}
+
+
+
+
+/* تنسيق التركيز */
+.relative-field input:focus,
+.relative-field select:focus {
+    border-color: #0031A0;
+    /* اللون الأزرق */
+    outline: none;
+    /* إزالة الخط الخارجي الافتراضي */
+}
+
+/* الأساليب للأقارب المتهمين */
+.accused-relative-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.accused-relative-field-group {
+    flex: 1 1 calc(50% - 20px);
+    /* يعرض الحقول في صفين */
+}
+
+/* الأساليب للأخوة والأخوات */
+#siblings-info {
+    border: 2px solid #ddd;
+    /* بولدر خارجي */
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.sibling-info {
+    border: 1px solid #ccc;
+    /* بولدر لكل قسم أخ/أخت */
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.sibling-field {
+    flex: 1 1 calc(33.333% - 20px);
+    /* 3 fields per row with margin gap */
+}
+
+/* الأساليب للأجهزة الصغيرة */
+@media (max-width: 768px) {
+
+    .accused-relative-info,
+    .sibling-info,
+    .relative-info {
+        display: block;
+    }
+
+    .accused-relative-field-group,
+    .sibling-field,
+    .relative-field {
+        flex: 1 1 100%;
+        /* يجعل كل حقل يظهر في صف منفصل */
+        margin-bottom: 10px;
+    }
+}
+
+/* General Styles */
+.question-group {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 15px;
+    width: 100%;
+    /* Full width */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* General Styles */
+.question-group {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 15px;
+    width: 100%;
+    /* Full width */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.question-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Style for the radio button group */
+.radio-group {
+    display: flex;
+    gap: 15px;
+}
+
+.radio-item {
+    display: flex;
+    align-items: center;
+    /* Align items vertically */
+}
+
+.radio-item input[type="radio"] {
+    margin-right: 5px;
+    margin-left: 10px;
+    transform: scale(1.5);
+    /* Increase the size of radio buttons */
+}
+
+.radio-item label {
+    margin: 0;
+    font-size: 1.2em;
+    /* Increase font size for labels */
+}
+
+/* Optional: Add spacing between radio buttons and labels */
+.radio-item input[type="radio"]+label {
+    margin-left: 5px;
+    /* Space between radio button and label */
+}
+
+/* Style for conditional inputs */
+.conditional-input {
+    margin-top: 10px;
+}
+
+.conditional-input label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.conditional-input input[type="text"],
+.conditional-input input[type="number"],
+.conditional-input input[type="date"] {
+    width: 50%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Style for travel info container */
+#travel-info-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.travel-info {
+    background-color: #dddddd4b;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.travel-info label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Style for the add button */
+#add-travel-info-btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+#add-travel-info-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .question-group {
+        padding: 10px;
+    }
+
+    .radio-group {
+        flex-direction: column;
+        /* Stack radio buttons vertically on small screens */
+        align-items: flex-start;
+        /* Align items to the start to avoid center alignment issues */
+    }
+
+    .radio-item {
+        margin-bottom: 5px;
+        /* Adjust margin for vertical stacking */
+    }
+
+    .radio-item input[type="radio"] {
+        transform: scale(1.5);
+        /* Scale up the size for small screens */
+        margin-left: 10px;
+
+    }
+
+    .radio-item label {
+        font-size: 1.2em;
+        /* Increase font size for small screens */
+    }
+
+    .conditional-input input[type="text"],
+    .conditional-input input[type="number"],
+    .conditional-input input[type="date"] {
+        padding: 6px;
+    }
+
+    #travel-info-container {
+        gap: 5px;
+    }
+
+    .travel-info {
+        padding: 8px;
+    }
+
+    #add-travel-info-btn {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .question-group {
+        padding: 8px;
+    }
+
+    .radio-group {
+        flex-direction: column;
+        /* Ensure vertical stacking on very small screens */
+        align-items: flex-start;
+        /* Align items to the start to avoid center alignment issues */
+    }
+
+    .radio-item {
+        margin-bottom: 5px;
+        /* Adjust margin for vertical stacking */
+    }
+
+    .radio-item input[type="radio"] {
+        transform: scale(1.5);
+        /* Further increase size for very small screens */
+        margin-left: 10px;
+
+    }
+
+    .radio-item label {
+        font-size: 1.2em;
+        /* Increase font size for very small screens */
+    }
+
+    .conditional-input input[type="text"],
+    .conditional-input input[type="number"],
+    .conditional-input input[type="date"] {
+        padding: 5px;
+    }
+
+    .travel-info {
+        padding: 6px;
+    }
+
+    #add-travel-info-btn {
+        padding: 6px 10px;
+        font-size: 12px;
+    }
+}
+
+
+
+/* Default - display two inputs side by side */
+.travel-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.travel-info .form-group input {
+    width: 90%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-bottom: 2px;
+    border-bottom-width: 2px;
+}
+
+
+/* تنسيق التركيز */
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #0031A0;
+    /* اللون الأزرق */
+    outline: none;
+    /* إزالة الخط الخارجي الافتراضي */
+    box-shadow: none;
+}
+
+
+/* For smaller screens - display one input per row */
+@media (max-width: 768px) {
+    .travel-info .form-group {
+        width: 100%;
+    }
+}
+
+
+
+/* تنسيق الرسائل غير الصالحة */
+.error-message {
+    color: red;
+    font-size: 0.875em;
+    margin-top: 5px;
+}
+
+/* -----------------------------------------------------preload------------------------------------------------------- */
+.preloader {
+    background-color: #f7f7f7;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999999;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    margin: 0 auto;
+}
+
+.preloader .preloader-circle {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    border-style: solid;
+    border-width: 1px;
+    border-top-color: #c86fff;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    z-index: 10;
+    border-radius: 50%;
+    -webkit-box-shadow: 0 1px 5px 0 rgba(35, 181, 185, 0.15);
+    box-shadow: 0 1px 5px 0 rgba(35, 181, 185, 0.15);
+    background-color: #fff;
+    -webkit-animation: zoom 2000ms infinite ease;
+    animation: zoom 2000ms infinite ease;
+    -webkit-transition: 0.4s;
+    -o-transition: 0.4s;
+    transition: 0.4s;
+}
+
+.preloader .preloader-circle2 {
+    border-top-color: #0078ff;
+}
+
+.preloader .preloader-img {
+    position: absolute;
+    top: 50%;
+    z-index: 200;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    text-align: center;
+    display: inline-block;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    padding-top: 5px;
+    -webkit-transition: 0.4s;
+    -o-transition: 0.4s;
+    transition: 0.4s;
+}
+
+.preloader .preloader-img img {
+    max-width: 55px;
+}
+
+.preloader .pere-text strong {
+    font-weight: 800;
+    color: #dca73a;
+    text-transform: uppercase;
+}
+
+@-webkit-keyframes zoom {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+        -webkit-transition: 0.4s;
+        -o-transition: 0.4s;
+        transition: 0.4s;
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+        -webkit-transition: 0.4s;
+        -o-transition: 0.4s;
+        transition: 0.4s;
+    }
+}
+
+@keyframes zoom {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+        -webkit-transition: 0.4s;
+        -o-transition: 0.4s;
+        transition: 0.4s;
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+        -webkit-transition: 0.4s;
+        -o-transition: 0.4s;
+        transition: 0.4s;
+    }
+}
+::selection {
+    background-color: rgb(6, 219, 215);
+    color: white;
+}

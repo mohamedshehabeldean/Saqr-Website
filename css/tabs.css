@@ -1,0 +1,689 @@
+body {
+  background-color: #dbc4f02d;
+  font-family: Arial, sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+/* navbar */
+/* navbar */
+@media only screen and (min-width: 990px)and (max-width: 1100px) {
+  .form-inline {
+    margin-left: 30%;
+
+
+
+  }
+
+
+
+}
+
+@media only screen and (min-width: 992px)and (max-width: 1015px) {
+  .form-inline {
+    margin-left: 28%;
+
+
+
+  }
+
+
+
+}
+
+
+@media only screen and (min-width: 1101px)and (max-width: 1249px) {
+  .form-inline {
+    margin-left: 36%;
+
+
+
+  }
+
+
+
+}
+
+@media only screen and (min-width: 1250px)and (max-width: 1299px) {
+  .form-inline {
+    margin-left: 44%;
+
+
+
+  }
+
+
+
+}
+
+@media only screen and (min-width: 1300px) {
+  .form-inline {
+    margin-left: 40%;
+
+
+  }
+
+
+}
+
+@media only screen and (min-width: 1250px) {
+  .comment {
+    margin-left: 50px;
+
+  }
+
+  .pers {
+    margin-left: 18px;
+  }
+
+
+
+}
+
+@media only screen and (min-width: 960px)and (max-width: 1250px) {
+  .comment {
+    margin-left: 60px;
+
+  }
+
+  .image {
+    margin-left: 15px;
+  }
+
+
+
+
+}
+
+
+
+.pers {
+  width: 35px;
+  height: 35px;
+  border-radius: 20px;
+}
+
+.pers:hover {
+  border: solid black 2px;
+}
+
+.fa-comment:hover {
+  color: rgb(17, 228, 31);
+
+}
+
+.cat {
+  font-size: 17px;
+}
+
+.cat:hover {
+  color: #0078ff;
+}
+
+.cat:active {
+  color: white;
+  background-color: #0078ff;
+}
+
+.categ,
+.mylearning {
+  font-size: 16px;
+  font-weight: 500;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+
+/* ************Drop down*********** */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-menu a {
+  display: block;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+}
+
+.nav-item:hover .dropdown-menu {
+  display: block;
+}
+
+/* ************Drop down*********** */
+
+/* image************ */
+.img {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-origin: padding-box;
+
+}
+
+.start {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.name {
+  text-transform: capitalize;
+}
+
+.start {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.learnin {
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.learnin:hover {
+  text-decoration: none;
+}
+
+@media only screen and (min-width: 990px)and (max-width: 1100px) {
+  .form-inline {
+    margin-left: 40%;
+
+
+
+  }
+
+
+
+}
+
+@media only screen and (min-width: 992px)and (max-width: 1015px) {
+  .form-inline {
+    margin-left: 40%;
+
+
+
+  }
+
+
+
+}
+
+
+@media only screen and (min-width: 1101px)and (max-width: 1149px) {
+  .form-inline {
+    margin-left: 52%;
+
+
+
+  }
+
+
+
+}
+
+@media only screen and (min-width: 1150px)and (max-width: 1249px) {
+  .form-inline {
+    margin-left: 54%;
+
+
+
+  }
+
+
+
+}
+
+@media only screen and (min-width: 1250px)and (max-width: 1299px) {
+  .form-inline {
+    margin-left: 60%;
+
+
+
+  }
+
+
+
+}
+
+@media only screen and (min-width: 1300px) {
+  .form-inline {
+    margin-left: 60%;
+
+
+  }
+
+
+}
+
+
+
+
+
+
+
+
+
+.btn {
+  border: none;
+}
+
+
+
+
+
+
+
+
+h1 {
+  text-align: center;
+  color: #4169e1;
+}
+
+p {
+  margin: 0 20px;
+  line-height: 1.6;
+}
+
+.btn-link {
+  font-size: 20px;
+  color: #ffffff;
+  background-color: #145374;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+.btn-link:hover {
+  background-color: rgb(37, 52, 70);
+  color: #ffffff;
+}
+
+
+/* التابات */
+.nav-tabs {
+  background-color: #f8f9fa;
+  /* لون خلفية التابات */
+  border-bottom: 1px solid #dee2e6;
+  /* حدود التابات */
+  font-size: 18px;
+  margin-left: 0;
+}
+
+.nav-tabs .nav-item {
+  margin-bottom: -1px;
+  /* توزيع التابات */
+}
+
+.nav-tabs .nav-link {
+  color: #37517e;
+  font-weight: bold;
+  font-size: 20px;
+  transition: font-size 0.5s ease;
+}
+
+
+.nav-link:hover {
+  background-color: #0d3347;
+  color: white;
+  font-size: 20px;
+
+}
+
+.nav-tabs .nav-link.active {
+  background-color: #145374;
+  color: #fff;
+  font-size: 20px;
+
+
+}
+
+/* المحتوى المرتبط بالتابات */
+.tab-content {
+  border: 1px solid #dee2e6;
+  /* حدود المحتوى */
+  border-top: 0;
+  /* حدود المحتوى من الأعلى */
+  padding: 15px;
+  /* هامش المحتوى */
+}
+
+h3 {
+  color: #707173;
+  font-family: cursive;
+  font-size: 22px;
+  font-weight: bolder;
+  /* margin-top: 10px;
+    margin-right: 5px; */
+}
+
+h2 {
+  color: #37517e;
+  font-family: Arial, sans-serif;
+  font-size: 40px;
+  font-weight: bolder;
+  text-align: center;
+  margin-top: 20px;
+  position: relative;
+}
+
+
+h2:after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 3px;
+  background-color: #37517e;
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
+
+@media (max-width: 600px) {
+  .btn {
+    width: 100%;
+  }
+
+}
+
+
+
+.checked {
+  color: orange;
+}
+
+body,
+html {
+  overflow-x: hidden;
+  height: 100%;
+  background-color: #ffffff;
+}
+
+.img-account-profile {
+  background-position: center;
+  background-size: cover;
+}
+
+/* navbar */
+@media only screen and (min-width: 990px)and (max-width: 1100px) {
+  .form-inline {
+    margin-left: 30%;
+
+
+
+  }
+
+
+
+}
+
+@media only screen and (min-width: 992px)and (max-width: 1015px) {
+  .form-inline {
+    margin-left: 28%;
+
+
+
+  }
+
+
+
+}
+
+
+@media only screen and (min-width: 1101px)and (max-width: 1249px) {
+  .form-inline {
+    margin-left: 36%;
+
+
+
+  }
+
+
+
+}
+
+@media only screen and (min-width: 1250px)and (max-width: 1299px) {
+  .form-inline {
+    margin-left: 44%;
+
+
+
+  }
+
+
+
+}
+
+@media only screen and (min-width: 1300px) {
+  .form-inline {
+    margin-left: 40%;
+
+
+  }
+
+
+}
+
+@media only screen and (min-width: 1250px) {
+  .comment {
+    margin-left: 50px;
+
+  }
+
+  .pers {
+    margin-left: 18px;
+  }
+
+
+
+}
+
+@media only screen and (min-width: 960px)and (max-width: 1250px) {
+  .comment {
+    margin-left: 60px;
+
+  }
+
+  .image {
+    margin-left: 15px;
+  }
+
+
+
+
+}
+
+
+
+.pers {
+  width: 35px;
+  height: 35px;
+  border-radius: 20px;
+}
+
+.pers:hover {
+  border: solid black 2px;
+}
+
+.fa-comment:hover {
+  color: rgb(17, 228, 31);
+
+}
+
+.cat {
+  font-size: 17px;
+}
+
+.cat:hover {
+  color: #0078ff;
+}
+
+.cat:active {
+  color: white;
+  background-color: #0078ff;
+}
+
+.categ,
+.mylearning {
+  font-size: 16px;
+  font-weight: 500;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+
+/* ****Drop down***** */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-menu a {
+  display: block;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+}
+
+.nav-item:hover .dropdown-menu {
+  display: block;
+}
+
+/* ****Drop down***** */
+
+/* image****** */
+.img {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-origin: padding-box;
+
+}
+
+.start {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.name {
+  text-transform: capitalize;
+}
+
+.start {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.learnin {
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.learnin:hover {
+  text-decoration: none;
+}
+
+/* navbar */
+@media only screen and (max-width: 990px) {
+  .form-inline {
+    margin-left: 0%;
+
+
+
+  }
+
+
+
+}
+
+@media only screen and (min-width: 990px)and (max-width: 1100px) {
+  .form-inline {
+    margin-left: 38%;
+
+
+
+  }
+
+
+
+}
+
+@media only screen and (min-width: 992px)and (max-width: 1015px) {
+  .form-inline {
+    margin-left: 40%;
+
+
+
+  }
+
+
+
+}
+
+
+@media only screen and (min-width: 1101px)and (max-width: 1149px) {
+  .form-inline {
+    margin-left: 49%;
+
+
+
+  }
+
+
+
+}
+
+@media only screen and (min-width: 1150px)and (max-width: 1249px) {
+  .form-inline {
+    margin-left: 52%;
+
+
+
+  }
+
+
+
+}
+
+@media only screen and (min-width: 1250px)and (max-width: 1299px) {
+  .form-inline {
+    margin-left: 57%;
+
+
+
+  }
+
+
+
+}
+
+@media only screen and (min-width: 1300px) {
+  .form-inline {
+    margin-left: 58%;
+
+
+  }
+
+
+}

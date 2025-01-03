@@ -1,0 +1,646 @@
+/*  remove default padding and margin*/
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: 'Tajawal', sans-serif;
+
+}
+
+/********* colors *********/
+
+:root {
+  --main-color: #349bd2;
+  --secondary-color: #fafbfd;
+  --third-color: #f69679;
+  --fourth-color: black;
+  --green-color: rgb(7, 170, 7);
+  --green-light-color: rgb(40, 148, 40);
+  --selection: rgb(6, 219, 215);
+}
+
+/* -----------------------------------------------------preload------------------------------------------------------- */
+.preloader {
+  background-color: #f7f7f7;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 999999;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  margin: 0 auto;
+}
+
+.preloader .preloader-circle {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  border-style: solid;
+  border-width: 1px;
+  border-top-color: #c86fff;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  z-index: 10;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 1px 5px 0 rgba(35, 181, 185, 0.15);
+  box-shadow: 0 1px 5px 0 rgba(35, 181, 185, 0.15);
+  background-color: #fff;
+  -webkit-animation: zoom 2000ms infinite ease;
+  animation: zoom 2000ms infinite ease;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.preloader .preloader-circle2 {
+  border-top-color: #0078ff;
+}
+
+.preloader .preloader-img {
+  position: absolute;
+  top: 50%;
+  z-index: 200;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  text-align: center;
+  display: inline-block;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  padding-top: 5px;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.preloader .preloader-img img {
+  max-width: 55px;
+}
+
+.preloader .pere-text strong {
+  font-weight: 800;
+  color: #dca73a;
+  text-transform: uppercase;
+}
+
+@-webkit-keyframes zoom {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: 0.4s;
+    -o-transition: 0.4s;
+    transition: 0.4s;
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+    -webkit-transition: 0.4s;
+    -o-transition: 0.4s;
+    transition: 0.4s;
+  }
+}
+
+@keyframes zoom {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: 0.4s;
+    -o-transition: 0.4s;
+    transition: 0.4s;
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+    -webkit-transition: 0.4s;
+    -o-transition: 0.4s;
+    transition: 0.4s;
+  }
+}
+
+/* navbar */
+
+
+
+
+@media only screen and (min-width: 1250px) {
+  .comment {
+    margin-left: 50px;
+
+  }
+
+  .pers {
+    margin-left: 30px;
+  }
+
+
+
+}
+
+@media only screen and (min-width: 960px)and (max-width: 1250px) {
+  .comment {
+    margin-left: 60px;
+
+  }
+
+  .image {
+    margin-left: 15px;
+  }
+
+
+
+}
+
+.pers {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+}
+
+.pers:hover {
+  border: 2px solid black;
+}
+
+
+
+
+
+/* *************Drop down************ */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: var(--secondary-color);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+
+.dropdown-menu a {
+  display: block;
+  color: var(--fourth-color);
+  padding: 12px 16px;
+  text-decoration: none;
+
+}
+
+.nav-item:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-item:hover {
+  color: var(--main-color);
+
+}
+
+/* navbar */
+.navbar-brand {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+
+.nav-link {
+  font-size: 20px;
+  font-weight: 400;
+
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+
+
+/* التابات */
+.nav-tabs {
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #dee2e6;
+  font-size: 22px;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  /* توزيع التابات بالتساوي */
+  flex-wrap: wrap;
+}
+
+.nav-tabs .nav-item {
+  flex-grow: 1;
+}
+
+.nav-tabs .nav-link {
+  color: #37517e;
+  font-weight: bolder;
+  font-size: 20px;
+  height: 55px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-tabs .nav-link:hover {
+  background-color: #0030a0ff;
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.nav-tabs .nav-link.active {
+  background-color: #0030a0;
+  color: #fff;
+  font-size: 22px;
+}
+
+.tab-content {
+  border: 1px solid #dee2e6;
+  border-top: 0;
+  padding: 15px;
+}
+
+/* لجعل التابات متجاوبة والشعار يأخذ العرض بالكامل */
+@media (max-width: 700px) {
+  .nav-tabs {
+    flex-direction: column;
+    /* يجعل التوزيع عموديًا في الشاشات الصغيرة */
+    align-items: center;
+  }
+
+  .nav-tabs .nav-item {
+    flex-grow: 0;
+    /* منع التابات من التمدد */
+    width: 100%;
+    /* كل عنصر يأخذ العرض الكامل */
+    text-align: center;
+  }
+
+  .h3 {
+    font-size: 20px;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+.h3 {
+  color: #707173;
+  font-family: cursive;
+  font-size: 30px;
+  font-weight: bolder;
+}
+
+
+
+.h2title {
+  color: #37517e;
+  font-family: Arial, sans-serif;
+  font-size: 40px;
+  font-weight: bolder;
+  text-align: center;
+  margin-top: 10px;
+  position: relative;
+  animation: slideIn 1.7s ease-out forwards;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
+.h2title img {
+  width: 70px;
+  height: auto;
+}
+
+
+h2:after {
+  content: '';
+  display: block;
+  width: 90px;
+  height: 3px;
+  background-color: #37517e;
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* tab */
+@media only screen and (max-width: 449px) {
+  .tabbb {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* button to move up */
+#btn {
+  width: 50px;
+  height: 50px;
+  border: none;
+  background-color: yellow;
+  cursor: pointer;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  display: none;
+  border-radius: 50px;
+}
+
+#btn:hover {
+  background-color: rgb(199, 205, 111);
+}
+
+
+
+/* ***************************** */
+/************* footer ************/
+/* ***************************** */
+.footer_link {
+  text-decoration: none;
+}
+
+.fo_link:hover {
+  text-decoration: underline;
+}
+
+.end {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: end;
+}
+
+
+
+
+/* تنسيق زر إضافة الوظيفة */
+#addJobBtn {
+  font-size: 16px;
+  font-weight: 500;
+  padding: 10px 20px;
+  background-color: #0d6efd;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#addJobBtn:hover {
+  background-color: #0b5ed7;
+}
+
+/* تنسيق حقل إدخال الوظيفة */
+#jobInput {
+  font-size: 16px;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  margin-right: 10px;
+  width: 40%;
+}
+
+/* تنسيق الجدول */
+table {
+  margin-top: 20px;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table th,
+table td {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+}
+
+table thead {
+  background-color: #0d6efd;
+  color: white;
+  font-weight: 700;
+}
+
+table tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* جعل الصورة في المنتصف */
+.text-center {
+  text-align: center;
+  /* محاذاة العناصر الداخلية إلى المنتصف */
+}
+
+/* في حال كنت تفضل استخدام margin */
+.img {
+  display: block;
+  /* يجعل الصورة عنصر بلوك */
+  margin: 0 auto;
+  /* يجعله في المنتصف بشكل تلقائي */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* تنسيق أزرار الإجراءات في الجدول */
+.button {
+  font-size: 14px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  width: 48%;
+  /* تجعل الأزرار تأخذ نصف عرض الصف */
+  float: left;
+  /* جعل الأزرار تتواجد بجوار بعضها */
+  margin-right: 4%;
+  /* إضافة مسافة بين الزرين */
+}
+
+button.btn:last-child {
+  margin-right: 0;
+  /* إزالة المسافة للزر الأخير */
+}
+
+button.btn-warning {
+  background-color: #ffc107;
+  border: none;
+  color: #fff;
+}
+
+button.btn-warning:hover {
+  background-color: #e0a800;
+}
+
+button.btn-danger {
+  background-color: #dc3545;
+  border: none;
+  color: #fff;
+}
+
+button.btn-danger:hover {
+  background-color: #c82333;
+}
+
+
+/* تنسيق الخلفية والحواف */
+.job-form {
+  margin-top: 5px;
+  background-color: #f8f9fa;
+  /* خلفية خفيفة */
+  border: 1px solid #ddd;
+  /* إطار خفيف */
+  border-radius: 10px;
+  /* حواف مستديرة */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* ظل خفيف */
+}
+
+/* تحسين مظهر الحقول */
+.job-form .form-control {
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 5px;
+  /* حواف مستديرة للحقل */
+}
+
+/* تحسين مظهر الزر */
+.job-form button.btn-primary {
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 5px;
+  /* حواف مستديرة للزر */
+  background-color: #007bff;
+  /* لون الزر الأساسي */
+  border: none;
+}
+
+.job-form button.btn-primary:hover {
+  background-color: #0056b3;
+  /* لون الزر عند التمرير */
+}
+
+/* تحسين النص */
+.job-form label {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* التباعد بين الحقول */
+.job-form .col-12 {
+  margin-bottom: 15px;
+}
+
+
+
+/* تنسيق عام لكافة الشاشات */
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: 'Tajawal', sans-serif;
+}
+
+/* تكوين متجاوب عبر الشاشات */
+@media only screen and (max-width: 768px) {
+  #jobInput {
+    width: 100%;
+    /* اجعل حقل الإدخال يأخذ عرض الشاشة الكامل */
+    margin-right: 0;
+    /* إزالة الهوامش */
+  }
+
+  .button {
+    width: 100%;
+    /* اجعل الأزرار تأخذ العرض الكامل للشاشة */
+    float: none;
+    /* إلغاء أي محاذاة */
+    margin: 10px 0;
+    /* إضافة مسافة بين الأزرار */
+  }
+
+  /* تحسين توزيع الجدول */
+  table {
+    width: 100%;
+  }
+
+  .nav-tabs {
+    flex-direction: column;
+    /* توزيع رأسي للتابات في الشاشات الصغيرة */
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1200px) {
+  #jobInput {
+    width: 60%;
+    /* العرض المناسب للشاشات المتوسطة */
+  }
+
+  .button {
+    width: 48%;
+    /* عرض الأزرار يصبح أصغر في الشاشات المتوسطة */
+  }
+}
+
+
+@media only screen and (max-width: 700px) {
+
+  table,
+  thead,
+  tbody,
+  th,
+  td,
+  tr {
+    display: block;
+    /* عرض الجدول كـ block */
+    width: 100%;
+    /* جعل العناصر تمتد بعرض الشاشة */
+  }
+
+  td {
+    text-align: center;
+    padding: 10px;
+  }
+}
+
+.big_tab{
+  margin-bottom: 200px;
+}
