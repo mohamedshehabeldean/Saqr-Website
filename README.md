@@ -12,7 +12,6 @@ Saqr is a web application designed to provide detailed insights into the company
 - [User Roles and Functionalities](#user-roles-and-functionalities)
 - [Project Design](#project-design)
 - [Contributing](#contributing)
-- [License](#license)
 
 ## Overview
 The Saqr website is developed to:
