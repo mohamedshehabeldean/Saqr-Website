@@ -1,5 +1,4 @@
 # Saqr-Website
-# Saqr
 
 Saqr is a web application designed to provide detailed insights into the company's fields and activities. It includes role-based functionalities tailored for employees, HR personnel, and supervisors. The project was developed following all stages of the Software Development Life Cycle (SDLC): Planning, Analysis, Design, Development, Testing, Deployment, and Maintenance.
 
