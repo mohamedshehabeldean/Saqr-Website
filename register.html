@@ -1,0 +1,1165 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+
+<head>
+    <title> صقر القاهرة-إنشاء حساب جديد </title>
+    <meta charset="UTF-8">
+    <meta name="description"
+        content="شركة صقر هي شركة رائدة في مجال العقارات والمقاولات والتشطيبات الداخلية والخارجية والأمن والحراسة">
+    <meta name="keywords" content="عقارات , مقاولات , أمن والحراسة , تشطيبات , النظافة , تأمين , صقر , القاهرة">
+    <meta name="author" content="Saqr Elqahera">
+    <link rel="icon" type="image/png" href="images/saqr_logo-removebg-preview.png" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/register.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+
+
+    </style>
+</head>
+
+<body>
+    <!-- ? Preloader Start -->
+    <div id="preloader-active">
+        <div class="preloader d-flex align-items-center justify-content-center">
+            <div class="preloader-inner position-relative">
+                <div class="preloader-circle"></div>
+                <div class="preloader-img pere-text">
+                    <img src="images/صقر-removebg-preview.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Preloader Start -->
+    <div class="register-container">
+        <a href="index.html">
+            <div class="logo-container">
+                <img class="logo" src="images/صقر-removebg-preview.png" alt="logo">
+            </div>
+        </a>
+
+        <h1>إنشاء حساب جديد</h1>
+        <form id="personal-info-form" class="needs-validation" novalidate>
+            <!-- محتوى التبويبات -->
+            <div id="personal-info" style="background-color: #f9f9f9; padding: 20px;">
+                <div style="font-size: 20px;font-weight: bolder;" class="card-header"> <i class="bi bi-person"></i>
+                    البيانات الشخصية
+                </div>
+                <div class="personal-info-grid">
+                    <!-- Full Name -->
+                    <div class="form-group   personal-info-group ">
+                        <label for="fullname">الاسم الكامل:</label>
+                        <input type="text" class="form-control" id="fullname" required>
+                        <div class="invalid-feedback">
+                            هذا الحقل مطلوب.
+                        </div>
+                    </div>
+                    <!-- role -->
+                    <div class="personal-info-group">
+                        <label for="marital_statuss">الدور:</label>
+                        <select id="marital_statuss" name="marital_statuss" class="form-control" required>
+                            <option value="" disabled selected>اختر دور الشخص</option>
+                            <option value="supervisor">مشرف موقع</option>
+                            <option value="employee">موظف</option>
+                            <option value="HR">HR</option>
+                        </select>
+                        <div class="invalid-feedback">يرجى اختيار دور الموظف.</div>
+                    </div>
+                    <!-- code -->
+                    <div class="form-group   personal-info-group ">
+                        <label for="code">الكود:</label>
+                        <input type="text" class="form-control" id="code" name="code" pattern="\d{14}"
+                            title="الكود" required>
+                        <div class="invalid-feedback">
+                            يرجى إدخال الكود بشكل صحيح.
+                        </div>
+                    </div>
+
+                    <!-- National ID -->
+                    <div class="form-group   personal-info-group ">
+                        <label for="national_id">الرقم القومي:</label>
+                        <input type="text" class="form-control" id="national_id" name="national_id" pattern="\d{14}"
+                            title="يجب أن يتكون من 14 رقمًا" required>
+                        <div class="invalid-feedback">
+                            يرجى إدخال الرقم القومي بشكل صحيح (14 رقمًا).
+                        </div>
+                    </div>
+
+                    <!-- Password -->
+
+                    <div class="form-group personal-info-group">
+                        <label for="password">كلمة المرور:</label>
+                        <input type="password" class="form-control" id="password" required>
+                        <div class="invalid-feedback">
+                            كلمة المرور مطلوبة.
+                        </div>
+                    </div>
+
+                    <!-- Confirm Password -->
+                    <div class="form-group    personal-info-group ">
+                        <label for="re-pass">تأكيد كلمة المرور:</label>
+                        <input type="password" class="form-control" id="re-pass" required>
+                        <div class="invalid-feedback">
+                            تأكيد كلمة المرور مطلوب.
+                        </div>
+                        <div id="password-match-error" style="color: red; display: none;">كلمتا المرور لا تتطابقان</div>
+                    </div>
+
+                    <!-- Email -->
+                    <div class="form-group   personal-info-group ">
+                        <label for="email_address">البريد الإلكتروني:</label>
+                        <input type="email" class="form-control" id="email_address" required>
+                        <div class="invalid-feedback">
+                            يرجى إدخال بريد إلكتروني صالح.
+                        </div>
+                    </div>
+
+                    <div class="form-group   personal-info-group ">
+                        <label for="mobile1">رقم الموبايل 1:</label>
+                        <input type="text" class="form-control" id="mobile1" name="mobile1" pattern="^0[0-9]{9}$"
+                            title="يجب أن يبدأ بـ 01 ويتكون من 11 رقمًا" required>
+                        <div class="invalid-feedback">
+                            يرجى إدخال رقم موبايل صالح (يبدأ بـ 0 ويكون 11 رقمًا).
+                        </div>
+                    </div>
+
+                    <div class="personal-info-group">
+                        <label for="mobile2">رقم الموبايل 2:</label>
+                        <input type="text" id="mobile2" name="mobile2" class="form-control">
+                    </div>
+                    <div class="personal-info-group">
+                        <label for="home_phone">رقم تليفون المنزل:</label>
+                        <input type="text" id="home_phone" name="home_phone" class="form-control">
+                    </div>
+
+
+                    <div class="personal-info-group">
+                        <label for="current_address">العنوان الحالي:</label>
+                        <input type="text" id="current_address" name="current_address" class="form-control" required>
+                        <div class="invalid-feedback">
+                            العنوان الحالي مطلوب.
+                        </div>
+                    </div>
+
+                    <div class="personal-info-group">
+                        <label for="previous_address">العنوان السابق:</label>
+                        <input type="text" id="previous_address" name="previous_address" class="form-control" required>
+                        <div class="invalid-feedback">
+                            العنوان السابق مطلوب.
+                        </div>
+                    </div>
+
+
+                    <div class="personal-info-group">
+                        <label for="mailing_address">العنوان لإرسال الإيميلات عليه:</label>
+                        <input type="text" id="mailing_address" name="mailing_address" class="form-control" required>
+                        <div class="invalid-feedback">
+                            هذا الحقل مطلوب.
+                        </div>
+                    </div>
+
+                    <div class="personal-info-group">
+                        <label for="education">المؤهل التعليمي:</label>
+                        <input type="text" id="education" name="education" class="form-control" required>
+                        <div class="invalid-feedback">
+                            يرجى إدخال المؤهل التعليمي.
+                        </div>
+                    </div>
+
+                    <div class="personal-info-group">
+                        <label for="graduation_year">سنة التخرج:</label>
+                        <input type="number" id="graduation_year" name="graduation_year" min="1900" max="2099"
+                            class="form-control" required>
+                        <div class="invalid-feedback">
+                            يرجى إدخال سنة تخرج صالحة بين
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="personal-info-group">
+                        <label for="closest_relative">أقرب الأقارب:</label>
+                        <input type="text" id="closest_relative" name="closest_relative" class="form-control" required>
+                        <div class="invalid-feedback">
+                            يرجى إدخال اسم أقرب الأقارب.
+                        </div>
+                    </div>
+
+                    <div class="personal-info-group">
+                        <label for="relative_relationship">درجة القرابة:</label>
+                        <input type="text" id="relative_relationship" name="relative_relationship" class="form-control"
+                            required>
+                        <div class="invalid-feedback">
+                            يرجى إدخال درجة القرابة.
+                        </div>
+                    </div>
+
+                    <div class="personal-info-group">
+                        <label for="relative_mobile">رقم الموبايل للقريب:</label>
+                        <input type="text" id="relative_mobile" name="relative_mobile" class="form-control"
+                            pattern="^0[0-9]{9}$" title="رقم الموبايل يجب أن يتكون من 10 أرقام" required>
+                        <div class="invalid-feedback">
+                            يرجى إدخال رقم موبايل صالح يتكون من 11 أرقام.
+                        </div>
+                    </div>
+
+                    <div class="personal-info-group">
+                        <label for="marital_status">الحالة الاجتماعية:</label>
+                        <select id="marital_status" name="marital_status" class="form-control"
+                            onchange="toggleSpouseInfo()" required>
+                            <option value="" disabled selected>اختر الحالة الاجتماعية</option>
+                            <option value="single">أعزب</option>
+                            <option value="married">متزوج</option>
+                            <option value="divorced">مطلق</option>
+                            <option value="widowed">أرمل</option>
+                        </select>
+                        <div class="invalid-feedback">
+                            يرجى اختيار الحالة الاجتماعية.
+                        </div>
+                    </div>
+
+
+                    <div class="personal-info-group">
+                        <label for="family_size">عدد أفراد الأسرة:</label>
+                        <input type="number" id="family_size" class="form-control" name="family_size" required>
+                        <div class="invalid-feedback">
+                            يرجى إدخال عدد صحيح.
+                        </div>
+                    </div>
+
+                    <div class="personal-info-group">
+                        <label for="google_map_link">لينك جوجل ماب للعنوان:</label>
+                        <input type="url" id="google_map_link" name="google_map_link" class="form-control" required>
+                        <div class="invalid-feedback">
+                            يرجى إدخال رابط جوجل ماب صالح.
+                        </div>
+                    </div>
+
+                    <div class="personal-info-group">
+                        <label for="religion">الديانة:</label>
+                        <input type="text" id="religion" class="form-control" name="religion" required>
+                        <div class="invalid-feedback">
+                            يرجى إدخال الديانة.
+                        </div>
+                    </div>
+
+                    <div class="personal-info-group">
+                        <label for="place_of_birth">جهة الميلاد:</label>
+                        <input type="text" id="place_of_birth" class="form-control" name="place_of_birth" required>
+                        <div class="invalid-feedback">
+                            يرجى إدخال جهة الميلاد.
+                        </div>
+                    </div>
+
+                    <div class="personal-info-group">
+                        <label for="previous_job">الوظيفة السابقة:</label>
+                        <input type="text" id="previous_job" class="form-control" name="previous_job" required>
+                        <div class="invalid-feedback">
+                            يرجى إدخال الوظيفة السابقة.
+                        </div>
+                    </div>
+
+                    <div class="personal-info-group">
+                        <label for="workplace_address">عنوان محل العمل:</label>
+                        <input type="text" id="workplace_address" class="form-control" name="workplace_address"
+                            required>
+                        <div class="invalid-feedback">
+                            يرجى إدخال عنوان محل العمل.
+                        </div>
+                    </div>
+
+                    <!-- بيانات الوالدين  -->
+
+                    <div id="parents-info">
+                        <div style="font-size: 20px;" class="card-header"> <i class="bi bi-person-badge"></i> بيانات
+                            الوالدين
+                        </div>
+
+                        <!-- Father Info Section -->
+                        <div class="parent-info">
+                            <h4>بيانات الوالد</h4>
+                            <div class="parent-fields">
+                                <!-- Full Name Fields -->
+                                <div class="field-group">
+                                    <label for="father_first_name">الاسم الرباعي:</label>
+                                    <input type="text" id="father_first_name" class="form-control"
+                                        name="father_first_name" required>
+                                    <div class="invalid-feedback">
+                                        يرجى إدخال الاسم الرباعي.
+                                    </div>
+                                </div>
+
+                                <!-- Religion -->
+                                <div class="field-group">
+                                    <label for="father_religion">الديانة:</label>
+                                    <input type="text" id="father_religion" class="form-control" name="father_religion"
+                                        required>
+                                    <div class="invalid-feedback">
+                                        يرجى إدخال الديانة.
+                                    </div>
+                                </div>
+
+                                <!-- Nationality -->
+                                <div class="field-group">
+                                    <label for="father_nationality">الجنسية:</label>
+                                    <input type="text" id="father_nationality" class="form-control"
+                                        name="father_nationality" required>
+                                    <div class="invalid-feedback">
+                                        يرجى إدخال الجنسية.
+                                    </div>
+                                </div>
+
+                                <!-- Marital Status -->
+                                <div class="field-group">
+                                    <label for="father_marital_status">المؤهل:</label>
+                                    <input type="text" id="father_marital_status" class="form-control"
+                                        name="father_marital_status" required>
+                                    <div class="invalid-feedback">
+                                        يرجى إدخال المؤهل.
+                                    </div>
+                                </div>
+
+                                <!-- Date of Birth -->
+                                <div class="field-group">
+                                    <label for="father_dob">تاريخ الميلاد:</label>
+                                    <input type="date" id="father_dob" class="form-control" name="father_dob" required>
+                                    <div class="invalid-feedback">
+                                        يرجى إدخال تاريخ الميلاد.
+                                    </div>
+                                </div>
+
+                                <!-- Address -->
+                                <div class="field-group">
+                                    <label for="father_address">محل الإقامة:</label>
+                                    <input type="text" id="father_address" class="form-control" name="father_address"
+                                        required>
+                                    <div class="invalid-feedback">
+                                        يرجى إدخال محل الإقامة.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Mother Info Section -->
+                        <div class="parent-info">
+                            <h4>بيانات الوالدة</h4>
+                            <div class="parent-fields">
+                                <!-- Full Name Fields -->
+                                <div class="field-group">
+                                    <label for="mother_first_name">الاسم الرباعي:</label>
+                                    <input type="text" id="mother_first_name" class="form-control"
+                                        name="mother_first_name" required>
+                                    <div class="invalid-feedback">
+                                        يرجى إدخال الاسم الرباعي.
+                                    </div>
+                                </div>
+
+                                <!-- Religion -->
+                                <div class="field-group">
+                                    <label for="mother_religion">الديانة:</label>
+                                    <input type="text" id="mother_religion" class="form-control" name="mother_religion"
+                                        required>
+                                    <div class="invalid-feedback">
+                                        يرجى إدخال الديانة.
+                                    </div>
+                                </div>
+
+                                <!-- Nationality -->
+                                <div class="field-group">
+                                    <label for="mother_nationality">الجنسية:</label>
+                                    <input type="text" id="mother_nationality" class="form-control"
+                                        name="mother_nationality" required>
+                                    <div class="invalid-feedback">
+                                        يرجى إدخال الجنسية.
+                                    </div>
+                                </div>
+
+                                <!-- Qualification -->
+                                <div class="field-group">
+                                    <label for="mother_qualification">المؤهل:</label>
+                                    <input type="text" id="mother_qualification" class="form-control"
+                                        name="mother_qualification" required>
+                                    <div class="invalid-feedback">
+                                        يرجى إدخال المؤهل.
+                                    </div>
+                                </div>
+
+                                <!-- Date of Birth -->
+                                <div class="field-group">
+                                    <label for="mother_dob">تاريخ الميلاد:</label>
+                                    <input type="date" id="mother_dob" class="form-control" name="mother_dob" required>
+                                    <div class="invalid-feedback">
+                                        يرجى إدخال تاريخ الميلاد.
+                                    </div>
+                                </div>
+
+                                <!-- Address -->
+                                <div class="field-group">
+                                    <label for="mother_address">محل الإقامة:</label>
+                                    <input type="text" id="mother_address" class="form-control" name="mother_address"
+                                        required>
+                                    <div class="invalid-feedback">
+                                        يرجى إدخال محل الإقامة.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- >بيانات الجد للأب والجد للأم -->
+
+                    <div id="grandparent-info">
+                        <div style="font-size: 20px;" class="card-header"><i class="bi bi-person-plus"></i> <i
+                                class="bi bi-person-x"></i> الجد للوالد والوالده
+                        </div>
+
+                        <!-- بيانات الجد للأب -->
+                        <div class="parent-info">
+                            <h4>الجد للوالد</h4>
+                            <div class="parent-fields">
+                                <!-- Full Name -->
+                                <div class="field-group">
+                                    <label for="grandfather_father_name">الاسم الرباعي:</label>
+                                    <input type="text" id="grandfather_father_name" class="form-control"
+                                        name="grandfather_father_name" required>
+                                    <div class="invalid-feedback">
+                                        يرجى إدخال الاسم الرباعي.
+                                    </div>
+                                </div>
+
+                                <!-- Date of Birth -->
+                                <div class="field-group">
+                                    <label for="grandfather_father_dob">تاريخ الميلاد:</label>
+                                    <input type="date" id="grandfather_father_dob" class="form-control"
+                                        name="grandfather_father_dob" required>
+                                    <div class="invalid-feedback">
+                                        يرجى إدخال تاريخ الميلاد.
+                                    </div>
+                                </div>
+
+                                <!-- Job -->
+                                <div class="field-group">
+                                    <label for="grandfather_father_job">الوظيفة:</label>
+                                    <input type="text" id="grandfather_father_job" class="form-control"
+                                        name="grandfather_father_job" required>
+                                    <div class="invalid-feedback">
+                                        يرجى إدخال الوظيفة.
+                                    </div>
+                                </div>
+
+                                <!-- Qualification -->
+                                <div class="field-group">
+                                    <label for="grandfather_father_qualification">المؤهل:</label>
+                                    <input type="text" id="grandfather_father_qualification" class="form-control"
+                                        name="grandfather_father_qualification" required>
+                                    <div class="invalid-feedback">
+                                        يرجى إدخال المؤهل.
+                                    </div>
+                                </div>
+
+                                <!-- Nationality -->
+                                <div class="field-group">
+                                    <label for="grandfather_father_nationality">الجنسية:</label>
+                                    <input type="text" id="grandfather_father_nationality" class="form-control"
+                                        name="grandfather_father_nationality" required>
+                                    <div class="invalid-feedback">
+                                        يرجى إدخال الجنسية.
+                                    </div>
+                                </div>
+
+                                <!-- Religion -->
+                                <div class="field-group">
+                                    <label for="grandfather_father_religion">الديانة:</label>
+                                    <input type="text" id="grandfather_father_religion" class="form-control"
+                                        name="grandfather_father_religion" required>
+                                    <div class="invalid-feedback">
+                                        يرجى إدخال الديانة.
+                                    </div>
+                                </div>
+
+                                <!-- Address -->
+                                <div class="field-group" style="margin-bottom: 3px;">
+                                    <label for="grandfather_father_address">محل الإقامة:</label>
+                                    <input type="text" id="grandfather_father_address" class="form-control"
+                                        name="grandfather_father_address" required>
+                                    <div class="invalid-feedback">
+                                        يرجى إدخال محل الإقامة.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- بيانات الجد للأم -->
+                        <div class="parent-info">
+                            <h4>الجد للوالدة</h4>
+                            <div class="parent-fields">
+                                <!-- Full Name -->
+                                <div class="field-group">
+                                    <label for="grandfather_mother_name">الاسم الرباعي:</label>
+                                    <input type="text" id="grandfather_mother_name" class="form-control"
+                                        name="grandfather_mother_name" required>
+                                    <div class="invalid-feedback">
+                                        يرجى إدخال الاسم الرباعي.
+                                    </div>
+                                </div>
+
+                                <!-- Date of Birth -->
+                                <div class="field-group">
+                                    <label for="grandfather_mother_dob">تاريخ الميلاد:</label>
+                                    <input type="date" id="grandfather_mother_dob" class="form-control"
+                                        name="grandfather_mother_dob" required>
+                                    <div class="invalid-feedback">
+                                        يرجى إدخال تاريخ الميلاد.
+                                    </div>
+                                </div>
+
+                                <!-- Job -->
+                                <div class="field-group">
+                                    <label for="grandfather_mother_job">الوظيفة:</label>
+                                    <input type="text" id="grandfather_mother_job" class="form-control"
+                                        name="grandfather_mother_job" required>
+                                    <div class="invalid-feedback">
+                                        يرجى إدخال الوظيفة.
+                                    </div>
+                                </div>
+
+                                <!-- Qualification -->
+                                <div class="field-group">
+                                    <label for="grandfather_mother_qualification">المؤهل:</label>
+                                    <input type="text" id="grandfather_mother_qualification" class="form-control"
+                                        name="grandfather_mother_qualification" required>
+                                    <div class="invalid-feedback">
+                                        يرجى إدخال المؤهل.
+                                    </div>
+                                </div>
+
+                                <!-- Nationality -->
+                                <div class="field-group">
+                                    <label for="grandfather_mother_nationality">الجنسية:</label>
+                                    <input type="text" id="grandfather_mother_nationality" class="form-control"
+                                        name="grandfather_mother_nationality" required>
+                                    <div class="invalid-feedback">
+                                        يرجى إدخال الجنسية.
+                                    </div>
+                                </div>
+
+                                <!-- Religion -->
+                                <div class="field-group">
+                                    <label for="grandfather_mother_religion">الديانة:</label>
+                                    <input type="text" id="grandfather_mother_religion" class="form-control"
+                                        name="grandfather_mother_religion" required>
+                                    <div class="invalid-feedback">
+                                        يرجى إدخال الديانة.
+                                    </div>
+                                </div>
+
+                                <!-- Address -->
+                                <div class="field-group" style="margin-bottom: 3px;">
+                                    <label for="grandfather_mother_address">محل الإقامة:</label>
+                                    <input type="text" id="grandfather_mother_address" class="form-control"
+                                        name="grandfather_mother_address" required>
+                                    <div class="invalid-feedback">
+                                        يرجى إدخال محل الإقامة.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div id="spouse-info" style="background-color: #f9f9f9; padding: 20px;display: none;">
+                        <div style="font-size: 20px;" class="card-header"><i class="bi bi-heart"></i> بيانات
+                            الزوج/الزوجة
+                        </div>
+
+                        <div class="personal-info-grid">
+                            <!-- Full Name -->
+                            <div class="personal-info-group">
+                                <label for="spouse_full_name">الاسم الرباعي:</label>
+                                <input type="text" id="spouse_full_name" name="spouse_full_name" class="form-control "
+                                    required>
+                            </div>
+
+                            <!-- Date of Birth -->
+                            <div class="personal-info-group">
+                                <label for="spouse_dob">تاريخ الميلاد:</label>
+                                <input type="date" id="spouse_dob" name="spouse_dob" class="form-control " required>
+                            </div>
+
+                            <!-- Religion -->
+                            <div class="personal-info-group">
+                                <label for="spouse_religion">الديانة:</label>
+                                <input type="text" id="spouse_religion" name="spouse_religion" class="form-control "
+                                    required>
+                            </div>
+
+                            <!-- Nationality -->
+                            <div class="personal-info-group">
+                                <label for="spouse_nationality">الجنسية:</label>
+                                <input type="text" id="spouse_nationality" name="spouse_nationality"
+                                    class="form-control " required>
+                            </div>
+
+                            <!-- Qualification -->
+                            <div class="personal-info-group">
+                                <label for="spouse_qualification">المؤهل:</label>
+                                <input type="text" id="spouse_qualification" name="spouse_qualification"
+                                    class="form-control">
+                            </div>
+
+                            <!-- Job -->
+                            <div class="personal-info-group">
+                                <label for="spouse_job">الوظيفة:</label>
+                                <input type="text" id="spouse_job" name="spouse_job" class="form-control">
+                            </div>
+
+                            <!-- Address -->
+                            <div class="personal-info-group">
+                                <label for="spouse_address">محل الإقامة:</label>
+                                <input type="text" id="spouse_address" name="spouse_address" class="form-control "
+                                    required>
+                            </div>
+
+                            <!-- Father's Full Name -->
+                            <div class="personal-info-group">
+                                <label for="father_full_name">اسم الوالد الرباعي:</label>
+                                <input type="text" id="father_full_name" name="father_full_name" class="form-control "
+                                    required>
+                            </div>
+
+                            <!-- Father's Date of Birth -->
+                            <div class="personal-info-group">
+                                <label for="father_dob">تاريخ ميلاد الوالد:</label>
+                                <input type="date" id="father_dob" name="father_dob" class="form-control " required>
+                            </div>
+
+                            <!-- Father's Religion -->
+                            <div class="personal-info-group">
+                                <label for="father_religion">ديانة الوالد:</label>
+                                <input type="text" id="father_religion" name="father_religion" class="form-control "
+                                    required>
+                            </div>
+
+                            <!-- Father's Nationality -->
+                            <div class="personal-info-group">
+                                <label for="father_nationality">جنسية الوالد:</label>
+                                <input type="text" id="father_nationality" name="father_nationality"
+                                    class="form-control " required>
+                            </div>
+
+                            <!-- Father's Qualification -->
+                            <div class="personal-info-group">
+                                <label for="father_qualification">مؤهل الوالد:</label>
+                                <input type="text" id="father_qualification" name="father_qualification"
+                                    class="form-control " required>
+                            </div>
+
+                            <!-- Father's Job -->
+                            <div class="personal-info-group">
+                                <label for="father_job">وظيفة الوالد:</label>
+                                <input type="text" id="father_job" name="father_job" class="form-control " required>
+                            </div>
+
+                            <!-- Mother's Full Name -->
+                            <div class="personal-info-group">
+                                <label for="mother_full_name">اسم الوالدة الرباعي:</label>
+                                <input type="text" id="mother_full_name" name="mother_full_name" class="form-control "
+                                    required>
+                            </div>
+
+                            <!-- Mother's Date of Birth -->
+                            <div class="personal-info-group">
+                                <label for="mother_dob">تاريخ ميلاد الوالدة:</label>
+                                <input type="date" id="mother_dob" name="mother_dob" class="form-control " required>
+                            </div>
+
+                            <!-- Mother's Religion -->
+                            <div class="personal-info-group">
+                                <label for="mother_religion">ديانة الوالدة:</label>
+                                <input type="text" id="mother_religion" name="mother_religion" class="form-control "
+                                    required>
+                            </div>
+
+                            <!-- Mother's Nationality -->
+                            <div class="personal-info-group">
+                                <label for="mother_nationality">جنسية الوالدة:</label>
+                                <input type="text" id="mother_nationality" name="mother_nationality"
+                                    class="form-control " required>
+                            </div>
+
+                            <!-- Mother's Qualification -->
+                            <div class="personal-info-group">
+                                <label for="mother_qualification">مؤهل الوالدة:</label>
+                                <input type="text" id="mother_qualification" name="mother_qualification"
+                                    class="form-control " required>
+                            </div>
+
+                            <!-- Mother's Job -->
+                            <div class="personal-info-group">
+                                <label for="mother_job">وظيفة الوالدة:</label>
+                                <input type="text" id="mother_job" name="mother_job" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+                    <!-- Existing "Children Info" tab -->
+                    <div id="children-info" style="background-color: #f9f9f9; padding: 20px;display: none;">
+                        <div style="font-size: 20px;" class="card-header"><i class="bi bi-person-check"></i> بيانات
+                            الأبناء
+                        </div>
+
+                        <div id="children-container">
+                            <div class="child-info" style="margin-bottom: 10px;">
+                                <div style="display: flex; flex-wrap: wrap; gap: 10px;">
+                                    <!-- Full Name -->
+                                    <div class="child-field">
+                                        <label for="child_first_name">الاسم الرباعي:</label>
+                                        <input type="text" id="child_first_name" name="child_first_name[]"
+                                            class="form-control ">
+                                    </div>
+
+                                    <!-- Date of Birth -->
+                                    <div class="child-field">
+                                        <label for="child_dob">تاريخ الميلاد:</label>
+                                        <input type="date" id="child_dob" name="child_dob[]" class="form-control ">
+                                    </div>
+
+                                    <!-- Place of Birth -->
+                                    <div class="child-field">
+                                        <label for="child_place_of_birth">محل الميلاد:</label>
+                                        <input type="text" id="child_place_of_birth" name="child_place_of_birth[]"
+                                            class="form-control ">
+                                    </div>
+
+                                    <!-- Qualification -->
+                                    <div class="child-field">
+                                        <label for="child_qualification">المؤهل:</label>
+                                        <input type="text" id="child_qualification" name="child_qualification[]"
+                                            class="form-control">
+                                    </div>
+
+                                    <!-- Job -->
+                                    <div class="child-field">
+                                        <label for="child_job">الوظيفة:</label>
+                                        <input type="text" id="child_job" name="child_job[]" class="form-control">
+                                    </div>
+
+                                    <!-- Address -->
+                                    <div class="child-field">
+                                        <label for="child_address">محل الإقامة:</label>
+                                        <input type="text" id="child_address" name="child_address[]"
+                                            class="form-control ">
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <button type="button" id="add-child-btn" style="margin-top: 10px;">+</button>
+                    </div>
+
+
+
+
+
+
+
+
+                    <!-- هل استدعت للشرطة وحررت محضر ضدك؟ -->
+                    <div class="question-group">
+                        <label>هل استدعت للشرطة وحررت محضر ضدك؟</label>
+                        <div class="radio-group">
+                            <div class="radio-item">
+                                <input type="radio" id="police_yes" name="police_report" value="yes">
+                                <label for="police_yes">نعم</label>
+                            </div>
+                            <div class="radio-item">
+                                <input type="radio" id="police_no" name="police_report" value="no">
+                                <label for="police_no">لا</label>
+                            </div>
+                        </div>
+
+                        <!-- رسالة خطأ -->
+                        <div id="radio-error" class="error-message" style="display: none;">
+                            يرجى اختيار نعم أو لا.
+                        </div>
+                        <div id="police_reason" style="display: none;">
+                            <label for="police_reason_input">سبب المحضر:</label>
+                            <input type="text" id="police_reason_input" class="form-control" name="police_reason"
+                                required>
+                        </div>
+                    </div>
+                    <!-- هل تنتمي إلى مذهب ديني خلاف المعروف في الأديان السماوية؟ -->
+                    <div class="question-group">
+                        <label>هل تنتمي إلى مذهب ديني خلاف المعروف في الأديان السماوية؟</label>
+                        <div class="radio-group">
+                            <div class="radio-item">
+                                <input type="radio" id="religious_movement_yes" name="religious_movement" value="yes">
+                                <label for="religious_movement_yes">نعم</label>
+                            </div>
+                            <div class="radio-item">
+                                <input type="radio" id="religious_movement_no" name="religious_movement" value="no">
+                                <label for="religious_movement_no">لا</label>
+                            </div>
+                        </div>
+                        <!-- رسالة خطأ -->
+                        <div id="religious-movement-error" class="error-message" style="display: none;">
+                            يرجى اختيار نعم أو لا.
+                        </div>
+                    </div>
+                    <!-- هل سبق لك السفر إلى الخارج؟ -->
+                    <div class="question-group">
+                        <label>هل سبق لك السفر إلى الخارج؟</label>
+                        <div class="radio-group">
+                            <div class="radio-item">
+                                <input type="radio" id="travel_yes" name="travel_abroad" value="yes" required>
+                                <label for="travel_yes">نعم</label>
+                            </div>
+                            <div class="radio-item">
+                                <input type="radio" id="travel_no" name="travel_abroad" value="no" required>
+                                <label for="travel_no">لا</label>
+                            </div>
+                        </div>
+                        <div id="travel-error" class="error-message" style="color: red; display: none;">يرجى تعبئة جميع
+                            تفاصيل السفر.</div>
+
+                        <div id="travel_details" class="conditional-input" style="display: none;">
+                            <div id="travel-info-container">
+                                <div class="travel-info">
+                                    <!-- Country Name -->
+                                    <div class="form-group  relative-field ">
+                                        <label for="country_name">اسم الدولة:</label>
+                                        <input type="text" id="country_name" name="country_name[]" class="form-control"
+                                            required>
+                                    </div>
+
+                                    <!-- Travel Times -->
+                                    <div class="form-group  relative-field ">
+                                        <label for="travel_times">عدد المرات:</label>
+                                        <input type="number" id="travel_times" name="travel_times[]"
+                                            class="form-control" required>
+                                    </div>
+
+                                    <!-- Travel Duration -->
+                                    <div class="form-group   relative-field ">
+                                        <label for="travel_duration">المدة:</label>
+                                        <input type="text" id="travel_duration" name="travel_duration[]"
+                                            class="form-control" required>
+                                    </div>
+
+                                    <!-- Travel Date -->
+                                    <div class="form-group    relative-field">
+                                        <label for="travel_date">التاريخ:</label>
+                                        <input type="date" id="travel_date" name="travel_date[]" class="form-control"
+                                            required>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button type="button" id="add-travel-info-btn">+</button>
+                            <div id="travel-error" class="error-message" style="color: red; display: none;">يرجى تعبئة
+                                جميع تفاصيل السفر.</div>
+                        </div>
+                    </div>
+
+
+
+
+
+
+                    <!-- هل لديك أقارب بالخارج؟ -->
+                    <div class="question-group">
+                        <label>هل لديك أقارب بالخارج؟</label>
+                        <div class="radio-group">
+                            <div class="radio-item">
+                                <input type="radio" id="relatives_abroad_yes" name="relatives_abroad" value="yes"
+                                    onchange="toggleRelativesInfo()" required>
+                                <label for="relatives_abroad_yes">نعم</label>
+                            </div>
+                            <div class="radio-item">
+                                <input type="radio" id="relatives_abroad_no" name="relatives_abroad" value="no"
+                                    onchange="toggleRelativesInfo()" required>
+                                <label for="relatives_abroad_no">لا</label>
+                            </div>
+                        </div>
+                        <div id="relatives-error" class="error-message" style="color: red; display: none;">يرجى تعبئة
+                            جميع تفاصيل الأقارب.</div>
+
+                        <div id="relatives-abroad-info"
+                            style="background-color: #f9f9f9; padding: 20px; border: 2px solid #ddd; border-radius: 10px; display: none; margin-top: 8px;">
+                            <div style="font-size: 20px;" class="card-header"><i class="bi bi-person-lines-fill"></i>
+                                بيانات الأقارب بالخارج
+                            </div>
+
+                            <div id="relatives-container">
+                                <div class="relative-info"
+                                    style="margin-bottom: 10px; border: 1px solid #ccc; padding: 10px; border-radius: 8px;">
+                                    <div style="display: flex; flex-wrap: wrap; gap: 10px;">
+                                        <!-- Full Name -->
+                                        <div class="relative-field">
+                                            <label for="relative_name">الاسم:</label>
+                                            <input type="text" id="relative_name" name="relative_name[]"
+                                                class="form-control " required>
+                                        </div>
+
+                                        <!-- Relationship Degree -->
+                                        <div class="relative-field">
+                                            <label for="relative_relationship">درجة القرابة:</label>
+                                            <input type="text" id="relative_relationship" name="relative_relationship[]"
+                                                class="form-control " required>
+                                        </div>
+
+                                        <!-- Country of Residence -->
+                                        <div class="relative-field">
+                                            <label for="relative_country">الدولة المقيم فيها:</label>
+                                            <input type="text" id="relative_country" name="relative_country[]"
+                                                class="form-control " required>
+                                        </div>
+
+                                        <!-- Reason for Residence -->
+                                        <div class="relative-field">
+                                            <label for="relative_reason">سبب الإقامة:</label>
+                                            <input type="text" id="relative_reason" name="relative_reason[]"
+                                                class="form-control " required>
+                                        </div>
+
+                                        <!-- Acquired Nationality -->
+                                        <div class="relative-field">
+                                            <label for="relative_nationality">الجنسية المكتسبة:</label>
+                                            <input type="text" id="relative_nationality" name="relative_nationality[]">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="button" id="add-relative-btn" style="margin-top: 10px;">+</button>
+                            <div id="relatives-error" class="error-message" style="color: red; display: none;">يرجى
+                                تعبئة جميع تفاصيل الأقارب.</div>
+                        </div>
+                    </div>
+
+                    <!-- هل لديك إخوة أو أخوات؟ -->
+                    <div class="question-group">
+                        <label>هل لديك إخوة أو أخوات؟</label>
+                        <div class="radio-group">
+                            <div class="radio-item">
+                                <input type="radio" id="siblings_yes" name="siblings" value="yes"
+                                    onchange="toggleSiblingsInfo()" required>
+                                <label for="siblings_yes">نعم</label>
+                            </div>
+                            <div class="radio-item">
+                                <input type="radio" id="siblings_no" name="siblings" value="no"
+                                    onchange="toggleSiblingsInfo()" required>
+                                <label for="siblings_no">لا</label>
+                            </div>
+                        </div>
+                        <div id="siblings-error" class="error-message" style="color: red; display: none;">يرجى تعبئة
+                            جميع تفاصيل الإخوة والأخوات.</div>
+
+                        <div id="siblings-info"
+                            style="background-color: #f9f9f9; padding: 20px; border: 2px solid #ddd; border-radius: 10px; display: none;margin-top: 8px;">
+                            <div style="font-size: 20px;" class="card-header"><i class="bi bi-people"></i> بيانات الإخوة
+                                والأخوات
+                            </div>
+
+                            <div id="siblings-container">
+                                <div class="sibling-info"
+                                    style="margin-bottom: 10px; border: 1px solid #ccc; padding: 10px; border-radius: 8px;">
+                                    <div style="display: flex; flex-wrap: wrap; gap: 10px;">
+                                        <!-- Full Name -->
+                                        <div class="sibling-field">
+                                            <label for="sibling_name">الاسم الرباعي:</label>
+                                            <input type="text" id="sibling_name" name="sibling_name[]"
+                                                class="form-control " required>
+                                        </div>
+
+                                        <!-- Date of Birth -->
+                                        <div class="sibling-field">
+                                            <label for="sibling_dob">تاريخ الميلاد:</label>
+                                            <input type="date" id="sibling_dob" name="sibling_dob[]"
+                                                class="form-control " required>
+                                        </div>
+
+                                        <!-- Job -->
+                                        <div class="sibling-field">
+                                            <label for="sibling_job">الوظيفة:</label>
+                                            <input type="text" id="sibling_job" name="sibling_job[]"
+                                                class="form-control " required>
+                                        </div>
+
+                                        <!-- Spouse Name -->
+                                        <div class="sibling-field">
+                                            <label for="sibling_spouse">اسم الزوج/الزوجة:</label>
+                                            <input type="text" id="sibling_spouse" name="sibling_spouse[]"
+                                                class="form-control">
+                                        </div>
+
+                                        <!-- Qualification -->
+                                        <div class="sibling-field">
+                                            <label for="sibling_qualification">المؤهل:</label>
+                                            <input type="text" id="sibling_qualification" name="sibling_qualification[]"
+                                                class="form-control">
+                                        </div>
+
+                                        <!-- Address -->
+                                        <div class="sibling-field">
+                                            <label for="sibling_address">محل الإقامة:</label>
+                                            <input type="text" id="sibling_address" name="sibling_address[]"
+                                                class="form-control " required>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button type="button" id="add-sibling-btn" style="margin-top: 10px;">+</button>
+                            <div id="siblings-error" class="error-message" style="color: red; display: none;">يرجى تعبئة
+                                جميع تفاصيل الإخوة والأخوات.</div>
+                        </div>
+                    </div>
+                    <!-- هل لديك أقارب سبق اتهامهم حتى الدرجة الثالثة؟ -->
+                    <div class="question-group">
+                        <label>هل لديك أقارب سبق اتهامهم حتى الدرجة الثالثة؟</label>
+                        <div class="radio-group">
+                            <div class="radio-item">
+                                <input type="radio" id="accused_relatives_yes" name="accused_relatives" value="yes"
+                                    onchange="toggleAccusedRelativesInfo()" required>
+                                <label for="accused_relatives_yes">نعم</label>
+                            </div>
+                            <div class="radio-item">
+                                <input type="radio" id="accused_relatives_no" name="accused_relatives" value="no"
+                                    onchange="toggleAccusedRelativesInfo()" required>
+                                <label for="accused_relatives_no">لا</label>
+                            </div>
+                        </div>
+                        <div id="accused-error" class="error-message" style="color: red; display: none;">يرجى تعبئة جميع
+                            تفاصيل الأقارب المتهمين.</div>
+
+
+                        <div id="accused-relatives"
+                            style="background-color: #f9f9f9; padding: 20px; border: 2px solid #ddd; border-radius: 10px; display: none;margin-top: 8px;">
+                            <div style="font-size: 20px;" class="card-header"><i class="bi bi-person-x"></i> بيانات
+                                الأقارب التي سبق اتهامهم
+                            </div>
+                            <div id="accused-relatives-container">
+                                <!-- الحاوية الأولية لبيانات الأقارب المتهمين -->
+                                <div class="accused-relative-info"
+                                    style="margin-bottom: 10px; border: 1px solid #ccc; padding: 10px; border-radius: 8px;">
+                                    <div style="display: flex; flex-wrap: wrap; gap: 10px;">
+                                        <!-- Full Name -->
+                                        <div class="accused-relative-field-group">
+                                            <label for="accused_name_0">الاسم:</label>
+                                            <input type="text" id="accused_name_0" name="accused_name[]"
+                                                class="form-control " required>
+                                        </div>
+
+                                        <!-- Degree of Kinship -->
+                                        <div class="accused-relative-field-group">
+                                            <label for="accused_relationship_0">درجة القرابة:</label>
+                                            <input type="text" id="accused_relationship_0" name="accused_relationship[]"
+                                                class="form-control " required>
+                                        </div>
+
+                                        <!-- Accusation -->
+                                        <div class="accused-relative-field-group">
+                                            <label for="accused_accusation_0">الاتهام:</label>
+                                            <input type="text" id="accused_accusation_0" name="accused_accusation[]"
+                                                class="form-control " required>
+                                        </div>
+
+                                        <!-- Judgment -->
+                                        <div class="accused-relative-field-group">
+                                            <label for="accused_judgment_0">الحكم:</label>
+                                            <input type="text" id="accused_judgment_0" name="accused_judgment[]"
+                                                class="form-control " required>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button type="button" id="add-accused-relative-button" style="margin-top: 10px;">+</button>
+                            <div id="accused-error" class="error-message" style="color: red; display: none;">يرجى تعبئة
+                                جميع تفاصيل الأقارب المتهمين.</div>
+                        </div>
+                    </div>
+
+                    <!------------------------------------------------ submit --------------------------------->
+
+                    <button id="submit_button" type="submit" class="btn btn-primary" disabled>إنشاء الحساب</button>
+
+
+                </div>
+            </div>
+    </div>
+
+    </form>
+    </div>
+    </div>
+
+
+
+    <!-- button to move up -->
+    <button title="top page" id="btn"><i class="fa-solid fa-arrow-up"></i></button>
+    <!-- footer -->
+    <footer style="margin-top: 100px;" class="text-center bg-body-tertiary">
+
+        <div style="width: 80%;height: 1px;background-color: rgb(177, 179, 179);margin: auto;margin-bottom: 80px;">
+
+        </div>
+        <div class=" end">
+            <img style="height: 40px;width: 50px;padding-left: 10px;" src="images/saqr_logo-removebg-preview.png"
+                alt="">
+            <h4>شركة صقر القاهرة</h4>
+
+        </div>
+
+        <!-- Grid container -->
+        <div class="container pt-4">
+            <section class="mb-4">
+                <!-- الصفحة الرئيسية -->
+                <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1 footer_link fo_link"
+                    href="index.html" role="button" data-mdb-ripple-color="dark">الصفحة الرئيسية</i></a>
+
+                <!-- عن الشركة -->
+                <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1 footer_link fo_link"
+                    href="#!" role="button" data-mdb-ripple-color="dark">عن الشركة</a>
+
+                <!-- تواصل معنا -->
+                <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1 footer_link fo_link"
+                    href="#!" role="button" data-mdb-ripple-color="dark">تواصل معنا</a>
+
+
+            </section>
+            <!-- Section: Social media -->
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+            جميع الحقوق محفوظة لشركة صقر القاهرة 2024 © </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- footer -->
+
+</body>
+
+
+<script src="js/popper.min.js"></script>
+<script src="js/jquery-3.7.1.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/register.js"></script>
+
+
+
+</html>
