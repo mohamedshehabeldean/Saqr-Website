@@ -37,7 +37,7 @@ The project was developed using the following technologies:
 ### Installation
 1. Clone the repository:
    bash
-   git clone https://github.com/mohamedshehabeldean/saqr.git
+   git clone [https://github.com/mohamedshehabeldean/saqr.git](https://github.com/mohamedshehabeldean/Saqr-Website/tree/main)
    
 2. Navigate to the project directory:
    bash
