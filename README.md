@@ -97,8 +97,8 @@ Contributions are welcome! To contribute:
 4. Create a pull request.
 
 ## Video
-* the video of my graduation project [click here]([https://drive.google.com/drive/folders/1oECCJydlNPpPnQeZGnyBGhOd33YYHyi7](https://drive.google.com/file/d/1VNVWzIHMR0yoPi4YGTj_ustTafkmzsmC/view?usp=drivesdk)
-)
+* the video of my graduation project [click here]([https://drive.google.com/drive/folders/1oECCJydlNPpPnQeZGnyBGhOd33YYHyi7](https://drive.google.com/file/d/1VNVWzIHMR0yoPi4YGTj_ustTafkmzsmC/view?usp=drivesdk))
+
 ---
 
 Feel free to reach out with any questions or feedback!
